@@ -283,25 +283,6 @@ h1, h2, p { margin: 0; font-weight: 400; }
   mix-blend-mode: screen;
 }
 
-/* Occasional shooting stars */
-.streak {
-  position: absolute;
-  width: calc(240 * var(--u));
-  height: 2px;
-  border-radius: 2px;
-  background: linear-gradient(90deg, transparent, rgba(200, 160, 255, .95), #fff);
-  filter: drop-shadow(0 0 6px rgba(170, 110, 255, .95));
-  opacity: 0;
-  transform: rotate(-14deg);
-}
-.streak-1 { animation: streak 11s linear infinite 2s; --sy: 40; --ey: 170; }
-.streak-2 { animation: streak 17s linear infinite 9s; --sy: 110; --ey: 260; width: calc(160 * var(--u)); }
-@keyframes streak {
-  0%   { left: -30%; top: calc(var(--sy) * var(--u)); opacity: 0; }
-  2%   { opacity: 1; }
-  11%  { left: 110%; top: calc(var(--ey) * var(--u)); opacity: 0; }
-  100% { left: 110%; opacity: 0; }
-}
 
 /* Nav */
 .nav {
@@ -417,7 +398,6 @@ h1, h2, p { margin: 0; font-weight: 400; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .layer-stars, .glow, .aurora { animation: none; }
-  .streak { display: none; }
   .js .txt,
   .js .hero .nav, .js .hero .hero-more, .js .hero .hero-contact, .js .hero-art {
     opacity: 1; transform: none; animation: none; transition: none;
@@ -488,15 +468,6 @@ h1, h2, p { margin: 0; font-weight: 400; }
   .glow-b { width: 120vw; height: 80vw; right: -50vw; top: 20vh; }
   .glow-c { width: 140vw; height: 50vw; left: -20vw; bottom: -10vw; }
   .aurora { top: 10vh; height: 22vh; filter: blur(26px); }
-  .streak { width: 120px; }
-  .streak-1 { --sy: 60; --ey: 320; }
-  .streak-2 { --sy: 400; --ey: 620; }
-  @keyframes streak {
-    0%   { left: -30%; top: calc(var(--sy) * 1px); opacity: 0; }
-    2%   { opacity: 1; }
-    11%  { left: 110%; top: calc(var(--ey) * 1px); opacity: 0; }
-    100% { left: 110%; opacity: 0; }
-  }
 
   .nav {
     top: 22px;
