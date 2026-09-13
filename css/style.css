@@ -190,17 +190,11 @@ h1, h2, p { margin: 0; font-weight: 400; }
 
 /* The galaxy that shows through the letters */
 .layer-bg { object-position: 50% 50%; }
-.layer-stars { animation: drift 40s ease-in-out infinite alternate; }
 
 /* White "Mido" on black, multiplied → galaxy only inside the glyphs */
 .layer-cutout {
   mix-blend-mode: multiply;
   object-fit: fill;
-}
-
-@keyframes drift {
-  from { transform: translate3d(0, 0, 0) scale(1); }
-  to   { transform: translate3d(calc(-18 * var(--u)), calc(10 * var(--u)), 0) scale(1.04); }
 }
 
 /* ---------- Hero purple atmosphere (sits above the multiply layer) ---------- */
@@ -397,7 +391,7 @@ h1, h2, p { margin: 0; font-weight: 400; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .layer-stars, .glow, .aurora { animation: none; }
+  .glow, .aurora { animation: none; }
   .js .txt,
   .js .hero .nav, .js .hero .hero-more, .js .hero .hero-contact, .js .hero-art {
     opacity: 1; transform: none; animation: none; transition: none;
@@ -460,7 +454,6 @@ h1, h2, p { margin: 0; font-weight: 400; }
     object-fit: cover;
   }
   .layer-cutout { object-fit: fill; }
-  .layer-stars  { width: 140%; height: 140%; left: -20%; top: -20%; }
 
   /* purple atmosphere sized to the phone */
   .glow { filter: blur(40px); }
