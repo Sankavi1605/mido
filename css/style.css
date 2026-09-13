@@ -204,6 +204,18 @@ h1, h2, p { margin: 0; font-weight: 400; }
   z-index: 2;
   overflow: hidden;
   pointer-events: none;
+  /* Keep the atmosphere OUTSIDE the letters: a full mask minus the cutout glyphs */
+  -webkit-mask-image: linear-gradient(#000 0 0), url("../assets/img/hero-cutout.png");
+          mask-image: linear-gradient(#000 0 0), url("../assets/img/hero-cutout.png");
+  -webkit-mask-size: 100% 100%, calc(1100 * var(--u)) calc(619 * var(--u));
+          mask-size: 100% 100%, calc(1100 * var(--u)) calc(619 * var(--u));
+  -webkit-mask-position: 0 0, calc(-47 * var(--u)) calc(-17 * var(--u));
+          mask-position: 0 0, calc(-47 * var(--u)) calc(-17 * var(--u));
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  mask-mode: alpha, luminance;
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
 }
 
 .glow {
@@ -455,7 +467,13 @@ h1, h2, p { margin: 0; font-weight: 400; }
   }
   .layer-cutout { object-fit: fill; }
 
-  /* purple atmosphere sized to the phone */
+  /* purple atmosphere sized to the phone; mask follows the mobile art box */
+  .hero-fx {
+    -webkit-mask-size: 100% 100%, 100vw calc(100vw * 619 / 1100);
+            mask-size: 100% 100%, 100vw calc(100vw * 619 / 1100);
+    -webkit-mask-position: 0 0, 0 calc(50% - 28vw);
+            mask-position: 0 0, 0 calc(50% - 28vw);
+  }
   .glow { filter: blur(40px); }
   .glow-a { width: 110vw; height: 70vw; left: -40vw; top: -10vw; }
   .glow-b { width: 120vw; height: 80vw; right: -50vw; top: 20vh; }
