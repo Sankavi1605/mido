@@ -1,7 +1,11 @@
-# Mido — galaxy landing page
+# Mido — In the Clouds
 
-Static HTML/CSS/JS rebuild of the Canva website design "Mido"
+Galaxy landing page for Mido. Static HTML/CSS/JS rebuild of the Canva website design
 (https://canva.link/jgfmxejfaw0esel).
+
+## Live
+
+Repository: https://github.com/Sankavi1605/mido
 
 ## Run
 
