@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mido — In the Clouds</title>
+  <meta name="description" content="Mido — a space where imagination defies gravity.">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preload" href="assets/fonts/Lora-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Lora-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+  <script>document.documentElement.classList.add('js');</script>
+
+  <main class="canvas">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="sec hero" id="top" style="--h:576">
+      <div class="hero-art" aria-hidden="true">
+        <img class="layer layer-bg"      src="assets/img/hero-bg.jpg"        alt="" style="--x:-259;--y:-31;--w:1276;--hh:638" data-mx="8">
+        <img class="layer layer-stars"   src="assets/img/galaxy-sticker.png" alt="" style="--x:-72;--y:-210;--w:1089;--hh:1029" data-mx="16">
+        <img class="layer layer-cutout"  src="assets/img/hero-cutout.png"    alt="" style="--x:-47;--y:-17;--w:1100;--hh:619">
+      </div>
+      <div class="hero-fx" aria-hidden="true">
+        <span class="glow glow-a"></span>
+        <span class="glow glow-b"></span>
+        <span class="glow glow-c"></span>
+        <span class="aurora"></span>
+        <canvas class="hero-particles"></canvas>
+        <span class="streak streak-1"></span>
+        <span class="streak streak-2"></span>
+      </div>
+      <h1 class="sr-only">Mido</h1>
+
+      <header class="nav">
+        <a class="brand" href="#top">
+          <img src="assets/img/logo.png" alt="" width="26" height="23">
+          <span>Mido</span>
+        </a>
+        <a class="nav-link nav-about" href="#about">About</a>
+      </header>
+
+      <a class="nav-link hero-more"    href="#about">View more</a>
+      <a class="nav-link hero-contact" href="#contact">Contact</a>
+    </section>
+
+    <!-- ============ 2. ABOUT ============ -->
+    <section class="sec sec-about" id="about" style="--h:567">
+      <img class="deco" src="assets/img/torus.png"  alt="" style="--x:-38;--y:29;--w:668;--hh:518"   data-p="0.06" loading="lazy" decoding="async">
+      <img class="deco helmet" src="assets/img/helmet.png" alt="" style="--x:412;--y:410;--w:605;--hh:605" data-p="-0.05" loading="lazy" decoding="async">
+      <img class="deco helmet" src="assets/img/helmet.png" alt="" style="--x:412;--y:412;--w:605;--hh:605" data-p="-0.05" loading="lazy" decoding="async">
+
+      <div class="txt right" style="--r:135;--y:197">
+        <h2>Mido</h2>
+      </div>
+      <div class="txt right" style="--r:138;--y:263">
+        <p>Welcome to a space where imagination defies gravity. "In the Clouds" is more than a destination—it’s a mindset. We elevate everyday ideas above the noise, blending timeless foundations with limitless possibilities. Buckle up and join us on a journey where your boldest concepts finally take flight.</p>
+      </div>
+    </section>
+
+    <!-- ============ 3. NEBULA ============ -->
+    <section class="sec sec-nebula" id="nebula" style="--h:655">
+      <img class="deco" src="assets/img/splash-b.png" alt="" style="--x:483;--y:-26;--w:935;--hh:947"   data-p="0.05" loading="lazy" decoding="async">
+      <img class="deco" src="assets/img/splash-a.png" alt="" style="--x:192;--y:74;--w:759;--hh:769"    data-p="0.08" loading="lazy" decoding="async">
+
+      <div class="txt" style="--x:72;--y:202">
+        <h2>Mido</h2>
+      </div>
+      <div class="txt" style="--x:73;--y:264">
+        <p>Welcome to a space where imagination defies gravity. "In the Clouds" is more than a destination—it’s a mindset. We elevate everyday ideas above the noise, blending timeless foundations with limitless possibilities. Buckle up and join us on a journey where your boldest concepts finally take flight.</p>
+      </div>
+
+      <img class="deco" src="assets/img/splash-c.png" alt="" style="--x:-265;--y:379;--w:1056;--hh:1068" data-p="0.04" loading="lazy" decoding="async">
+      <img class="deco" src="assets/img/splash-b.png" alt="" style="--x:-56;--y:505;--w:935;--hh:947"    data-p="0.07" loading="lazy" decoding="async">
+    </section>
+
+    <!-- ============ 4. VIDEO ============ -->
+    <section class="sec sec-video" id="video" style="--h:534">
+      <video class="deco vid" style="--x:-79;--y:6;--w:1168;--hh:531"
+             autoplay muted loop playsinline preload="metadata"
+             poster="assets/video/asteroids-poster.jpg" aria-label="Asteroids drifting through a purple nebula">
+        <source src="assets/video/asteroids-704.mp4" type="video/mp4">
+        <source src="assets/video/asteroids-640.mp4" type="video/mp4">
+      </video>
+      <img class="deco" src="assets/img/rocks.png" alt="" style="--x:-8;--y:16;--w:446;--hh:510" data-p="0.1" loading="lazy" decoding="async">
+
+      <div class="txt right" style="--r:202;--y:136">
+        <h2>Mido</h2>
+      </div>
+      <div class="txt right" style="--r:192;--y:217">
+        <p>Welcome to a space where imagination defies gravity. "In the Clouds" is more than a destination—it’s a mindset. We elevate everyday ideas above the noise, blending timeless foundations with limitless possibilities. Buckle up and join us on a journey where your boldest concepts finally take flight.</p>
+      </div>
+    </section>
+
+    <!-- ============ 5. PLANET / CONTACT ============ -->
+    <section class="sec sec-planet" id="contact" style="--h:1306">
+      <img class="deco" src="assets/img/blue-galaxy-overlay.png" alt="" style="--x:-99;--y:10;--w:917;--hh:946"   data-p="0.04" loading="lazy" decoding="async">
+      <img class="deco planet" src="assets/img/planet.png" alt="" style="--x:-341;--y:121;--w:767;--hh:767" data-p="0.06" loading="lazy" decoding="async">
+
+      <div class="txt right" style="--r:59;--y:209">
+        <h2>Mido</h2>
+      </div>
+      <div class="txt right" style="--r:42;--y:301">
+        <p>Welcome to a space where imagination defies gravity. "In the Clouds" is more than a destination—it’s a mindset. We elevate everyday ideas above the noise, blending timeless foundations with limitless possibilities. Buckle up and join us on a journey where your boldest concepts finally take flight.</p>
+      </div>
+      <div class="txt right" style="--r:42;--y:456">
+        <p>Welcome to a space where imagination defies gravity. "In the Clouds" is more than a destination—it’s a mindset. We elevate everyday ideas above the noise, blending timeless foundations with limitless possibilities. Buckle up and join us on a journey where your boldest concepts finally take flight.</p>
+      </div>
+      <div class="txt right" style="--r:42;--y:612">
+        <p>Welcome to a space where imagination defies gravity. "In the Clouds" is more than a destination—it’s a mindset. We elevate everyday ideas above the noise, blending timeless foundations with limitless possibilities. Buckle up and join us on a journey where your boldest concepts finally take flight.</p>
+      </div>
+
+      <span class="divider" style="--y:958" aria-hidden="true"></span>
+
+      <img class="deco tail" src="assets/img/splash-e.png" alt="" style="--x:134;--y:606;--w:1436;--hh:1400"  data-p="0.03" loading="lazy" decoding="async">
+      <img class="deco tail" src="assets/img/splash-f.png" alt="" style="--x:159;--y:714;--w:1199;--hh:1204"  data-p="0.05" loading="lazy" decoding="async">
+      <img class="deco tail" src="assets/img/asteroids.png" alt="" style="--x:-51;--y:758;--w:1139;--hh:649"  data-p="0.08" loading="lazy" decoding="async">
+      <img class="deco tail" src="assets/img/splash-d.png" alt="" style="--x:-253;--y:758;--w:1012;--hh:1094" data-p="0.04" loading="lazy" decoding="async">
+      <img class="deco tail" src="assets/img/splash-f.png" alt="" style="--x:-197;--y:781;--w:715;--hh:708"   data-p="0.06" loading="lazy" decoding="async">
+    </section>
+
+  </main>
+
+  <script src="js/main.js?v=2" defer></script>
+</body>
+</html>
